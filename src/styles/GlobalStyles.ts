@@ -19,10 +19,12 @@ const GlobalStyle = createGlobalStyle`
     .container {
       max-width: 1024px;
 
-      @media (max-width: ${breakpoints.tablet}) {
+      @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
         max-width: 1025px;
-        width: 100%;
+        width: 90%;
       }
+
+
     }
 `
 

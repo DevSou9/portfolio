@@ -14,12 +14,25 @@ export const DivHero = styled.div`
   background-attachment: fixed;
   @media (max-width: ${breakpoints.mobile}) {
     max-width: 1024px;
+    display: grid;
+    grid-template-columns: 12fr;
+    row-gap: 16px;
     /* position: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 120vh;
+    height: 190vh;
+  }
+
+  @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
+    max-width: 1024px;
+    /* position: fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
   }
 
   display: flex;
@@ -63,6 +76,11 @@ export const DivHero = styled.div`
         font-size: 28px;
         margin-top: 20px;
       }
+    }
+
+    @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
+      font-size: 32px;
+      margin-top: 40px;
     }
   }
 
@@ -129,9 +147,10 @@ export const DivHero = styled.div`
     }
 
     @media (max-width: ${breakpoints.mobile}) {
-      margin-top: 170px;
-      width: 90%;
+      margin-top: 190px;
+      width: 100%;
       padding: 12px;
+      grid-template-columns: 12fr;
     }
   }
 
@@ -225,9 +244,10 @@ export const DivHero = styled.div`
     @media (max-width: ${breakpoints.mobile}) {
       max-width: 1024px;
       width: 100vw;
-      margin-top: 400px;
+      margin-top: 418px;
       display: flex;
       flex-direction: column;
+      row-gap: 4px;
     }
   }
 
