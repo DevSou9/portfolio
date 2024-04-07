@@ -71,10 +71,12 @@ export const DivHero = styled.div`
       width: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
 
       h2 {
-        font-size: 28px;
+        font-size: 24px;
         margin-top: 20px;
+        text-align: center;
       }
     }
 
@@ -95,6 +97,7 @@ export const DivHero = styled.div`
       margin: 0;
       display: flex;
       flex-direction: column;
+      width: 90%;
     }
     @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
       display: flex;
@@ -121,6 +124,14 @@ export const DivHero = styled.div`
     top: 0;
     left: 0;
     opacity: 0.56;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      height: 190vh;
+    }
+
+    @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
+      height: 100vh;
+    }
   }
 
   .divDescricao {
@@ -158,6 +169,14 @@ export const DivHero = styled.div`
       width: 100%;
       padding: 12px;
       grid-template-columns: 12fr;
+
+      padding-left: 12px;
+      padding-right: 12px;
+
+      p {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
     }
 
     @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
@@ -169,7 +188,7 @@ export const DivHero = styled.div`
         width: 70%;
         color: ${colors.white};
         text-align: left;
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 16px;
         margin-bottom: 12px;
       }
@@ -177,8 +196,9 @@ export const DivHero = styled.div`
       a {
         color: ${colors.white};
         text-align: left;
-        font-size: 16px;
+        font-size: 18px;
         margin: 0;
+
         padding: 0;
       }
     }
@@ -196,7 +216,7 @@ export const DivHero = styled.div`
     @media (max-width: ${breakpoints.mobile}) {
       margin-bottom: 12px;
       justify-content: left;
-      /* align-items: center; */
+      margin-left: 0;
     }
   }
 
@@ -214,6 +234,11 @@ export const DivHero = styled.div`
 
     #pPortfolio {
       color: red;
+
+      @media (max-width: ${breakpoints.tablet}) {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
     }
 
     div {
@@ -244,6 +269,11 @@ export const DivHero = styled.div`
 
       a {
         margin-bottom: 12px;
+        @media (max-width: ${breakpoints.tablet}) {
+          margin-bottom: 16px;
+          padding-left: 12px;
+          padding-right: 12px;
+        }
       }
     }
 
@@ -269,11 +299,15 @@ export const DivHero = styled.div`
 
     #divGridColumn {
       height: auto;
+      @media (max-width: ${breakpoints.mobile}) {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
     }
 
     @media (max-width: ${breakpoints.mobile}) {
       max-width: 1024px;
-      width: 100vw;
+      width: 90%;
       margin-top: 418px;
       display: flex;
       flex-direction: column;
@@ -316,6 +350,12 @@ export const DivHero = styled.div`
       font-size: 16px;
       margin: 0;
     }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-left: 0;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
   }
 
   #divSites {
@@ -325,6 +365,11 @@ export const DivHero = styled.div`
     padding: 0;
     p {
       padding-left: 8px;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      padding-left: 12px;
+      padding-right: 12px;
     }
   }
 

@@ -12,6 +12,7 @@ export const Hero = () => {
           <img src={logo} alt="" />
           <h2>Desenvolvedor Wendell Souza</h2>
         </div>
+
         <div className="divDescricao container divGeral">
           <p>
             Desenvolvedor graduado em Análise e Desenvolvimento de Sistemas, com
@@ -21,12 +22,16 @@ export const Hero = () => {
             <div className="divIcones">
               <FaEnvelope style={{ color: 'red' }} />
 
-              <a href="#">contato@wendellsouza.com</a>
+              <a href="mailto:contato@wendellsouza.com">
+                contato@wendellsouza.com
+              </a>
             </div>
 
             <div className="divIcones">
               <FaWhatsapp style={{ color: 'red' }} />
-              <a href="#">(21) 99609-3012</a>
+              <a href="https://api.whatsapp.com/send?phone=5521996093012">
+                (21) 99609-3012
+              </a>
             </div>
 
             <div className="divIcones">
