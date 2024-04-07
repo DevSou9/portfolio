@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { breakpoints } from './variables'
 
 const GlobalStyle = createGlobalStyle`
 
@@ -8,10 +9,20 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 
+
+
+    a{
+      text-decoration: none;
+    }
+
   }
     .container {
       max-width: 1024px;
 
+      @media (max-width: ${breakpoints.tablet}) {
+        max-width: 1025px;
+        width: 100%;
+      }
     }
 `
 
