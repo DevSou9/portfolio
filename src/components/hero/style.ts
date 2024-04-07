@@ -80,7 +80,7 @@ export const DivHero = styled.div`
 
     @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
       font-size: 32px;
-      margin-top: 40px;
+      margin-top: 72px;
     }
   }
 
@@ -95,6 +95,13 @@ export const DivHero = styled.div`
       margin: 0;
       display: flex;
       flex-direction: column;
+    }
+    @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      width: 100%;
+      align-items: flex-start;
     }
   }
 
@@ -151,6 +158,29 @@ export const DivHero = styled.div`
       width: 100%;
       padding: 12px;
       grid-template-columns: 12fr;
+    }
+
+    @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
+      font-size: 32px;
+      margin-top: 156px;
+      width: 90%;
+      padding: 16px;
+      p {
+        width: 70%;
+        color: ${colors.white};
+        text-align: left;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+      }
+
+      a {
+        color: ${colors.white};
+        text-align: left;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 
@@ -248,6 +278,15 @@ export const DivHero = styled.div`
       display: flex;
       flex-direction: column;
       row-gap: 4px;
+    }
+    @media ((max-width: ${breakpoints.tablet}) and (min-width: ${breakpoints.mobile})) {
+      display: flex;
+
+      flex-direction: column;
+
+      row-gap: 32px;
+      margin-top: 460px;
+      width: 90vw;
     }
   }
 
